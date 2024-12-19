@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 최고은/60231190/기초웹 과제 #3-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>초록그늘: 후원 신청하기</title>
+    <link rel="stylesheet" href="./page.css" />
+    <script src="./page.js" defer></script>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <header>
+        <h1>후원 신청하기</h1>
+      </header>
+      <nav>
+        <div>🌿초록그늘</div>
+        <a href="./firstpage.html">사업소개</a>
+        <a href="./secondpage.html">후원하기</a>
+        <a href="#">소식</a>
+        <a href="#">마이페이지</a>
+      </nav>
+      <main class="donation">
+        <section id="type">
+          <!--후원 방식과 후원 금액 선택-->
+          <fieldset>
+            <legend>후원분야</legend>
+            <p>
+              * 원하는 후원 방식을 선택해 주세요. <br />
+              <strong>후원방식</strong>
+              <input type="radio" id="method1" name="method" />
+              <label for="method1">정기후원</label>
+              <input type="radio" id="method2" name="method" />
+              <label for="method2">일시후원</label>
+            </p>
+            <hr />
+            <p>
+              * 원하는 후원 금액을 선택해 주세요. <br />
+              <label for="amount"><strong>후원 금액</strong></label>
+              <select name="amount" id="amount">
+                <option value="10,000">10,000</option>
+                <option value="20,000">20,000</option>
+                <option value="30,000">30,000</option>
+                <option value="50,000">50,000</option>
+                <option value="100,000">100,000</option>
+                <option value="200,000">200,000</option>
+              </select>
+            </p>
+          </fieldset>
+        </section>
+        <br />
+        <section id="info">
+          <!--이름, 성별, 생일, 전화번호를 입력받고 영수증 여부 선택-->
+          <fieldset>
+            <legend>후원자 정보</legend>
+            <p>
+              <label for="name"><strong>이름</strong></label>
+              <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+              <strong>성별</strong>
+              <input type="radio" id="gender1" name="gender" required />
+              <label for="gender1">남자</label>
+              <input type="radio" id="gender2" name="gender" />
+              <label for="gender2">여자</label>
+            </p>
+            <p>
+              <label for="birth"><strong>생년월일</strong></label>
+              <input
+                type="number"
+                id="birth"
+                min="1900"
+                max="2024"
+                value="year"
+              />년
+              <input
+                type="number"
+                id="birth"
+                min="1"
+                max="12"
+                value="month"
+              />월
+              <input type="number" id="birth" min="1" max="31" value="year" />일
+            </p>
+            <p>
+              <label for="phone"><strong>휴대전화</strong></label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="010-0000-0000 형식"
+                required
+              />
+            </p>
+            <div id="feedback1"></div>
+            <p>
+              <strong>기부금 영수증</strong>
+              <input type="radio" id="receipt1" name="receipt" required />
+              <label for="receipt1">예</label>
+              <input type="radio" id="receipt2" name="receipt" />
+              <label for="receipt2">아니오</label>
+            </p>
+          </fieldset>
+        </section>
+        <br />
+        <section id="pay">
+          <!--결제방식 선택과 개인정보 수집에 관한 동의-->
+          <fieldset>
+            <legend>후원금 납입</legend>
+            <p>
+              <strong>결제방식</strong>
+              <input
+                type="radio"
+                id="payhow1"
+                name="how"
+                value="신용카드"
+                required
+              />
+              <label for="payhow1">신용카드</label>
+              <input type="radio" id="payhow2" name="how" value=" 계좌이체" />
+              <label for="payhow2">계좌이체</label>
+              <input type="radio" id="payhow3" name="how" value="휴대폰 결제" />
+              <label for="payhow3">휴대폰 결제</label>
+              <input type="radio" id="payhow4" name="how" value="간편결제" />
+              <label for="payhow4">간편결제</label>
+            </p>
+            <div id="feedback2"></div>
+            <p>
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree"
+                ><strong>후원을 위한 개인정보 수집에 동의합니다.</strong></label
+              >
+            </p>
+          </fieldset>
+        </section>
+        <br />
+        <section id="submit">
+          <!--후원신청, 취소 버튼과 첫번째 페이지로 이동하는 하이퍼링크-->
+          <input type="submit" value="후원신청하기" />
+          <input type="reset" value="취소하기" id="cancelButton" />
+          <div>국내 위기아동지원 보러가기 👇🏻</div>
+          <!--첫번째 페이지인 위기아동지원 페이지로 이동하는 하이퍼링크-->
+          <a href="./firstpage.html" target="_blank" title="위기아동지원"
+            >위기에 처한 아이들을 도와주세요</a
+          >
+        </section>
+      </main>
+      <br />
+      <footer>
+        <p>최고은/60231190/기초웹 과제 #3</p>
+      </footer>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 최고은/60231190/기초웹 과제 #3 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>초록그늘: 위기아동지원</title>
+    <link rel="stylesheet" href="./page.css" />
+    <style>
+      /*아동 빈곤율 표 스타일*/
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid gray;
+      }
+    </style>
+    <script src="./page.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>위기아동지원사업이란?</h1>
+      <p>
+        다양한 원인으로 인해 주거, 의료, 생계의 어려움을 겪고 있는 아동에게
+        맞춤형 지원을 제공하여 건강하게 성장할 수 있도록 돕습니다.
+      </p>
+    </header>
+    <nav>
+      <div>🌿초록그늘</div>
+      <a href="./firstpage.html">사업소개</a>
+      <a href="./secondpage.html">후원하기</a>
+      <a href="#">소식</a>
+      <a href="#">마이페이지</a>
+    </nav>
+    <main class="home">
+      <section id="current">
+        <h2>빈곤아동 현황</h2>
+        <hr />
+        <ul>
+          <li>
+            <strong>아동빈곤율</strong>
+            <table>
+              <!--아동빈곤율 통계자료(출처: 초록우산 어린이재단 2023 아동지표)를 표로 제시-->
+              <caption>
+                아동빈곤율
+              </caption>
+              <thead>
+                <tr>
+                  <!--셀 확장-->
+                  <td rowspan="2">단위: %</td>
+                  <th colspan="5">연도</th>
+                </tr>
+                <tr>
+                  <th>2016</th>
+                  <th>2017</th>
+                  <th>2018</th>
+                  <th>2019</th>
+                  <th>2020</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>시장소득(중위 50%)</td>
+                  <td>15.5</td>
+                  <td>14.5</td>
+                  <td>13.1</td>
+                  <td>12.1</td>
+                  <td>12.9</td>
+                </tr>
+                <tr>
+                  <td>경상소득(중위 50%)</td>
+                  <td>15.2</td>
+                  <td>13.9</td>
+                  <td>12.3</td>
+                  <td>10.8</td>
+                  <td>10.5</td>
+                </tr>
+                <tr>
+                  <td>가처분소득(중위 50%)</td>
+                  <td>15.2</td>
+                  <td>14.2</td>
+                  <td>12.3</td>
+                  <td>10.6</td>
+                  <td>9.8</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>평균 아동 빈곤율</td>
+                  <td>15.3</td>
+                  <td>14.2</td>
+                  <td>12.6</td>
+                  <td>11.2</td>
+                  <td>11.1</td>
+                </tr>
+              </tfoot>
+            </table>
+          </li>
+          <li>
+            <!--국민기초생활수급아동 현황(출처: 초록우산 어린이재단 2023 아동지표)에 대한 설명을 그래프와 함께 제시-->
+            <strong>국민기초생활수급아동 현황</strong>
+            <figure>
+              <img
+                src="./img/기초생활수급아동.png"
+                alt="기초생활수급아동 현황"
+                width="80%"
+              />
+              <figcaption>아동 기초생활보장수급률 연도별 현황</figcaption>
+              <br />
+              <ul>
+                <li>
+                  국민기초 생활수급 아동 현황은 2016부터 2022년까지 소폭 증감
+                  추세를 보이며 4%대를 유지하고 있습니다.
+                </li>
+                <li>
+                  2022년 전체 아동 인구 대비 기초생활보장수급아동 비율은
+                  4.6%이며, 전체 인구 대비 기초생활보장수급자 비율은 4.7%로
+                  나타납니다.
+                </li>
+              </ul>
+            </figure>
+          </li>
+        </ul>
+        <p>➕ 다른 아동관련 주요통계를 보고 싶다면?</p>
+        <!--설명을 읽다가 아동관련 다른 통계에 관심이 생긴 사람들을 위해 아동권리보장원의 아동주요통계 페이지로 이동-->
+        <a
+          href="https://www.ncrc.or.kr/ncrc/na/ntt/selectNttList.do?mi=1469&bbsId=1127"
+          target="_blank"
+          title="아동주요통계"
+          >아동주요통계</a
+        >
+      </section>
+      <br />
+      <section id="business">
+        <h2>위기아동지원사업</h2>
+        <hr />
+        <ul>
+          <!--위기아동지원에 관한 사업을 리스트로 제시(사진 출처: Save the Children)-->
+          <li>
+            <strong>저소득가정아동 지원</strong>
+            <figure>
+              <img src="./img/아동물품.png" alt="아동지원물품" width="350px" />
+              <figcaption>
+                열악한 환경이 아동에게 미치는 영향을 최소화할 수 있게 아동에게
+                필요한 물품을 지원합니다.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <strong>아동 식사 지원</strong>
+            <figure>
+              <img
+                src="./img/급식지원.png"
+                alt="빈곤아동급식지원"
+                width="350px"
+              />
+              <figcaption>
+                결식위기아동에게 건강하고 균형 잡힌 식사를 제공하고, 위생적인
+                환경을 조성하여 식사의 권리를 보장합니다.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <strong>난민 아동 지원</strong>
+            <figure>
+              <img src="./img/난민아동.png" alt="난민아동지원" width="350-px" />
+              <figcaption>
+                복지의 사각지대에 놓여있는 난민 아동에게 양육비와 보육비를
+                지원하여 아동을 건강하게 양육할 수 있도록 합니다.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <strong>보건 의료 지원</strong>
+            <figure>
+              <img src="./img/의료지원.png" alt="아동의료지원" width="350-px" />
+              <figcaption>
+                질병의 위험에 노출된 아이들을 위해 전국 각지의 전문 의료인들과
+                파트너쉽을 맺어 아동의 치료받을 권리를 보호합니다.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <br />
+        <strong>➕ 지원사업 결과보고</strong>
+        <p>
+          여러분들의 후원으로 인해 <strong>변화된 아이들</strong>의 이야기를
+          확인하세요.
+        </p>
+        <!-- 펼쳐보기 버튼 추가 -->
+        <button id="toggleButton">사례보기</button>
+        <!-- 사례보기 클릭 후 보여지는 내용들 -->
+        <div id="cases" style="display: none">
+          <div class="case">
+            <strong>생계비 지원 사례</strong>
+            <p>
+              12살 성진이네는 난방비를 내지 못해 전기 매트와 여름 이불에
+              의지하며 겨울나기를 해왔습니다. 그러나 생계비 지원으로 민혁이네는
+              전기매트를 온수매트로 교체하였고, 따뜻한 겨울 이불도 덮을 수 있게
+              되었습니다.
+            </p>
+          </div>
+          <hr />
+          <div class="case">
+            <strong>식사 지원 사례</strong>
+            <p>
+              할머니와 둘이 사는 17살 서연이는 학교에서 나오는 점심 급식으로
+              하루하루를 버텨왔습니다. 그러나 식사 지원으로 서연이는 이제 맛있는
+              밥을 삼시세끼 챙겨먹을 수 있게 되었습니다.
+            </p>
+          </div>
+          <hr />
+          <div class="case">
+            <strong>교육비 지원 사례</strong>
+            <p>
+              7살 혁민이는 할아버지가 주변에서 얻어온, 나이에 맞지 않는 장난감과
+              동화책을 사용하고 있었습니다. 하지만 교육비 지원으로, 혁민이는
+              발달 단계에 맞는 장난감과 동화책을 구입하여 언어발달에 도움을 받게
+              되었습니다.
+            </p>
+          </div>
+          <hr />
+          <div class="case">
+            <strong>의료비 지원 사례</strong>
+            <p>
+              일본인 어머니와 둘이 사는 15살 민서는 친구랑 놀다가 복사뼈가
+              부러졌습니다. 병원에 입원했지만 어려운 가정 형편 때문에 치료비가
+              걱정이었습니다. 그러나 의료비 지원으로 민서네는 수술비와 통원
+              치료비 걱정을 덜었습니다.
+            </p>
+          </div>
+          <button id="closeButton">닫기</button>
+        </div>
+        <a
+          href="https://www.worldvision.or.kr/campaign/result"
+          target="_blank"
+          title="지원사업 결과보고"
+          >더 많은 달라진 아이들의 생활 확인하기</a
+        >
+        <!--World Vision의 캠페인 결과보고 활용-->
+      </section>
+      <br />
+      <section id="boost">
+        <h2>위기아동지원사업에 후원해주세요.</h2>
+        <hr />
+        <p>
+          <em
+            >저소득가정 아이들이
+            <strong>긴급한 생활난, 질병과 어려움에서 벗어나</strong> 기본적인
+            삶을 누릴 수 있도록 지금, 도와주세요.</em
+          >
+        </p>
+        <div>후원 신청 페이지 👇🏻</div>
+        <!--두번째 페이지인 후원신청 페이지로 이동하는 하이퍼링크-->
+        <a href="./secondpage.html" target="_blank">후원하러 가기</a>
+        <div class="comment-section">
+          <h5>
+            📌 위기아동지원사업에 관해 의견을 남겨주세요. 추후 더 나은 사업을
+            위한 참고에 쓰입니다.
+          </h5>
+          <textarea
+            id="commentInput"
+            cols="30"
+            rows="5"
+            placeholder="의견을 작성해주세요."
+          ></textarea>
+          <button id="submitButton">완료</button>
+          <div id="commentList">의견목록</div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <footer>
+      <p>최고은/60231190/기초웹 과제 #3</p>
+    </footer>
+  </body>
+</html>
